@@ -5,6 +5,4 @@ class Grade:
         self.course = course
         self.grade = grade
         
-    def __str__(self):
-        return f"{self.grade}"
         

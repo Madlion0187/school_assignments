@@ -5,5 +5,3 @@ class Course:
         self.name = name
         self.teacher = teacher
         
-    def __str__(self):
-        return f"{self.name}"

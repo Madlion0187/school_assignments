@@ -5,5 +5,3 @@ class Student:
         self.name = name
         self.average = average
         
-    def __str__(self):
-        return f"{self.name}"
