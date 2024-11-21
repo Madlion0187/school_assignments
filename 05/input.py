@@ -1,5 +1,12 @@
 user_name = input("Enter your name: ")
-user_age = int(input("Enter your age: "))
+
+while True:
+    try:
+        user_age = int(input("Enter your age: "))
+        break
+    except ValueError:
+        print("This is not a number.")
+        
 
 #user_name_back = ""
 
