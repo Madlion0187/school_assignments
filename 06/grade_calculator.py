@@ -11,15 +11,18 @@ class GradeCalculator:
         avg = self.get_avg()
         
         if avg >= 90:
-            return("Your grade is: 5")
+            return("5")
         elif avg >= 80:
-            return("Your grade is: 4")
+            return("4")
         elif avg >= 70:
-            return("Your grade is: 3")
+            return("3")
         elif avg >= 60:
-            return("Your grade is: 2")
+            return("2")
         else:
-            return("Your grade is: 1")
+            return("1")
+        
+    def __str__(self):
+        return f"Your grade is: {self.get_score()}"
         
 calculator = GradeCalculator(80, 75)    
-print(calculator.get_score())
+print(calculator)
